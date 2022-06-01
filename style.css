@@ -1,0 +1,111 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body
+{
+    overscroll-behavior: none;
+    font-family: neue-haas-grotesk-display;
+}
+
+#formulaire, #formulaire2 {
+    position: absolute;
+    top: 0;
+    left: -26vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    height: 100vh;
+    width:25vw;
+    background: #18191A;
+    z-index: 1;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+#formulaire2 {
+    z-index: 2;
+}
+
+#formulaire form, #formulaire2 form {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    height: 90%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+
+form input,
+form select {
+    width: 80%;
+    min-height: 35px;
+    height: 5%;
+    background: #242526;
+    padding: 10px;
+    color: #BCBCFF;
+    font-family: haas-grotesk;
+    border-radius: 15px;
+    border:none;
+    margin-bottom: 40px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    font-family: neue-haas-grotesk-text;
+}
+
+form input::placeholder {
+    color: #BCBCFF
+}
+
+form select {
+    border-radius: 10px;
+    width: 85%;
+    min-height: 50px;
+    color: #BCBCFF;
+}
+
+#formulaire p, #formulaire2 p {
+    color: #BCBCFF;
+    margin-bottom: 20px
+}
+
+#formulaire span, #fermer {
+    border-bottom: 1px solid #BCBCFF;
+}
+
+#formulaire span:hover,
+#formulaire2 p:hover,
+#send:hover,
+#send1:hover {
+    cursor: pointer;
+}
+
+#send,
+#send1 {
+    font-weight: 550;
+    transition: 0.2s;
+    box-shadow: none;
+    background: #BCBCFF;
+    color: #242526;
+}
+
+#send1:hover,
+#send:hover {
+    box-shadow: #9595ca 0px 4px 8px -2px, #BCBCFF 0px 0px 0px 1px;
+    transition: 0.2s;
+    background: #242526;
+    color: #BCBCFF;
+}
+
+.webgl
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    outline: none;
+}
