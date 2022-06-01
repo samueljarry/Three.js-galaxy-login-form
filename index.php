@@ -39,7 +39,4 @@
         </form>
     </section><canvas class="webgl"></canvas>
 </body>
-<?php 
-    var_dump($_SESSION)
-?>
 </html>
